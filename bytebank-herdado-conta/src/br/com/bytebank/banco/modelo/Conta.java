@@ -7,11 +7,11 @@ package br.com.bytebank.banco.modelo;
  *
  */
 
-public abstract class Conta extends Object implements Comparable<Conta> {
+public abstract class Conta extends Object implements Comparable<Conta>, Serializable {
     protected double saldo;
     private int agencia;
     private int numero;
-    private Cliente titular;
+    private transient Cliente titular;//TRANSIENT : para a classe Cliente "escapar" da serializable
     private static int total = 0;
 
     /**
