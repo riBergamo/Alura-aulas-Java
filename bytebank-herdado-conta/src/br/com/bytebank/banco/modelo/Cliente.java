@@ -9,7 +9,7 @@ package br.com.bytebank.banco.modelo;
  *
  */
 
-public class Cliente {
+public class Cliente /*implements Serializable*/ { //não precisa por causa do transient na classe Conta
     private String nome;
     private String profissao;
     private String cpf;
