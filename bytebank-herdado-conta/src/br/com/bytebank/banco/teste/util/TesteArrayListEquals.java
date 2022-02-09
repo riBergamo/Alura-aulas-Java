@@ -24,12 +24,12 @@ public class TesteArrayListEquals {
         lista.add(cc2);
 
         Conta cc3 = new ContaCorrente(11, 33);
-        boolean existe = lista.contains(cc3);                                                                           //1 - Dentro do método contains() o arrayList aproveita o equals sobrescrito na classe Conta
-                                                                                                                        //2 - Pra saber se ja existe um elemento igual
+        boolean existe = lista.contains(cc3);// 1 - Dentro do método contains() o arrayList aproveita o equals sobrescrito na classe Conta pra saber se ja existe um elemento igual
+                                                                                                                       
         System.out.println("Já existe: " + existe);
 
-        for(Conta conta : lista) {                                                                                      //Para cada elemento da lista vai faze oq tiver entre {}
-            System.out.println(conta);                                                                                  //Isso so funciona por causa dos <> depois de ArrayList
+        for(Conta conta : lista) {     //Para cada elemento da lista vai faze oq tiver entre {}
+            System.out.println(conta);//Isso so funciona por causa dos <> depois de ArrayList
         }
 
     }
